@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Bell Jar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .image-container {
+      max-width: 300px;
+      margin: 20px auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .description {
+      font-size: 18px;
+      color: #555;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Bell Jar</h1>
+
+  <div class="image-container">
+    <img src="https://m.media-amazon.com/images/I/71SNjl0fA7L._AC_UF1000,1000_QL80_.jpg" alt="The Bell Jar">
+  </div>
+
+  <div class="description">
+    <p><strong>Author:</strong> Sylvia Plath</p>
+    <p><strong>Published:</strong> 1963</p>
+    <p><strong>Genre:</strong> Semi-autobiographical, Psychological Fiction</p>
+    <p><strong>Synopsis:</strong></p>
+    <p>
+      *The Bell Jar* is Sylvia Plath's only novel, and it offers a powerful, semi-autobiographical account of a young woman’s mental breakdown. The story follows Esther Greenwood, a talented and ambitious young woman who, while interning at a magazine in New York City, spirals into depression. As her mental health deteriorates, she grapples with feelings of isolation and a sense of entrapment, symbolized by the bell jar that closes over her mind. The novel explores themes of identity, mental illness, and the pressures faced by women in the 1950s.
+    </p>
+  </div>
+
+  <button class="back-btn" onclick="goBack()">Go Back</button>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>

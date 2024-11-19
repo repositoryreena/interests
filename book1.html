@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Fountainhead</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .image-container {
+      max-width: 300px;
+      margin: 20px auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .description {
+      font-size: 18px;
+      color: #555;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Fountainhead</h1>
+
+  <div class="image-container">
+    <img src="https://m.media-amazon.com/images/M/MV5BMTk4Nzg5MDMyNF5BMl5BanBnXkFtZTcwMzM1NzMyNw@@._V1_.jpg" alt="The Fountainhead">
+  </div>
+
+  <div class="description">
+    <p><strong>Author:</strong> Ayn Rand</p>
+    <p><strong>Published:</strong> 1943</p>
+    <p><strong>Genre:</strong> Philosophical Fiction</p>
+    <p><strong>Synopsis:</strong></p>
+    <p>
+      *The Fountainhead* follows the story of Howard Roark, an individualistic and innovative architect who refuses to conform to traditional designs and expectations. His uncompromising attitude towards art and life leads him to battle against societal norms and the established powers in the architectural world. The novel is a passionate exploration of individualism, integrity, and the pursuit of personal vision.
+    </p>
+  </div>
+
+  <button class="back-btn" onclick="goBack()">Go Back</button>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>

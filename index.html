@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+
+    .image-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for desktop */
+      gap: 0; /* Remove any gap between grid cells */
+      padding: 0; /* Remove padding */
+      width: 100vw; /* Full width of the viewport */
+      /* Removed height: 100vh to allow the page to scroll */
+    }
+
+    .image-container a {
+      display: block;
+      margin: 0;
+      line-height: 0;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ensure the images cover the area */
+    }
+
+    /* Media Queries for smaller screen sizes (Mobile view remains unchanged) */
+    @media (max-width: 1200px) {
+      .image-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+      }
+    }
+
+    @media (max-width: 900px) {
+      .image-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+      }
+    }
+
+    @media (max-width: 600px) {
+      .image-container {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+      }
+    }
+
+    /* Desktop (large screens) - Always keep 4 columns */
+    @media (min-width: 1201px) {
+      .image-container {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <a href="image1.html"><img src="https://m.media-amazon.com/images/M/MV5BNTY0ZTI2NzQtYWI1YS00ZWM3LWFmMjMtZWYxNmNmOTI0MGJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Image 1"></a>
+    <a href="image2.html"><img src="https://m.media-amazon.com/images/M/MV5BMTgwYjQ1NDktOTcwNi00MWZhLTliYWQtZDg5NjZhY2U5ZTNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Image 2"></a>
+    <a href="image3.html"><img src="https://res.cloudinary.com/jerrick/image/upload/d_642250b563292b35f27461a7.png,f_jpg,fl_progressive,q_auto,w_1024/64bff7b7c2079a001d4c87cf.jpg" alt="Image 3"></a>
+    <a href="image4.html"><img src="https://images.fineartamerica.com/images-medium-large-5/6-gullivers-travels-granger.jpg" alt="Image 4"></a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slaughterhouse-Five</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .image-container {
+      max-width: 300px;
+      margin: 20px auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .description {
+      font-size: 18px;
+      color: #555;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .back-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Slaughterhouse-Five</h1>
+
+  <div class="image-container">
+    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1440319389i/4981.jpg" alt="Slaughterhouse-Five">
+  </div>
+
+  <div class="description">
+    <p><strong>Author:</strong> Kurt Vonnegut</p>
+    <p><strong>Published:</strong> 1969</p>
+    <p><strong>Genre:</strong> Science Fiction, War Fiction</p>
+    <p><strong>Synopsis:</strong></p>
+    <p>
+      *Slaughterhouse-Five* is a satirical novel by Kurt Vonnegut that combines elements of science fiction with an anti-war message. The protagonist, Billy Pilgrim, becomes "unstuck in time" and experiences different moments of his life, from his time as a soldier during World War II, to his capture by the Germans, to his experiences in a concentration camp, and even his abduction by aliens from the planet Tralfamadore. The novel’s nonlinear structure and dark humor highlight the absurdity of war, the inevitability of death, and the futility of human suffering. It is considered one of the most important anti-war novels of the 20th century.
+    </p>
+  </div>
+
+  <button class="back-btn" onclick="goBack()">Go Back</button>
+
+  <script>
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+
+</body>
+</html>
