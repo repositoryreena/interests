@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candide by Voltaire</title>
+  <style>
+    /* Reset default margin and padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden; /* Prevent scrollbars */
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 28px;
+      margin-top: 20px;
+    }
+
+    .book-description {
+      font-size: 18px;
+      color: #555;
+      text-align: center;
+      max-width: 800px;
+      margin: 20px 0;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 20px;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    .image-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .back-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #45a049;
+    }
+
+    .link-container {
+      margin-top: 20px;
+    }
+
+    .link-container a {
+      font-size: 16px;
+      color: #1E90FF;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+    .link-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Candide by Voltaire</h1>
+
+  <div class="book-description">
+    <p>
+      *Candide* is a satirical novella written by French philosopher Voltaire in 1759. The story follows the young and naïve Candide as he travels the world, experiencing a series of misadventures that expose the absurdities of human suffering, blind optimism, and the concept of "the best of all possible worlds." Through his encounters, Voltaire critiques optimism, religion, and society, particularly the idea that everything happens for the best in a world that often seems unjust.
+    </p>
+    <p>
+      As a determinist, I resonate with Voltaire's critique of blind optimism. In a world where events often seem to unfold according to forces beyond our control, *Candide* shows how even our best efforts to make things better can be thwarted by the unpredictable and uncontrollable nature of existence.
+    </p>
+  </div>
+
+  <div class="quote">
+    <p>
+      "All is for the best, in the best of all possible worlds." — Pangloss, the optimist philosopher in *Candide*.
+    </p>
+  </div>
+
+  <div class="image-container">
+    <a href="https://en.wikipedia.org/wiki/Candide" target="_blank">
+      <img src="https://bookramblings.blog/wp-content/uploads/2021/05/20210810-candide.jpg?w=410" alt="Candide by Voltaire">
+    </a>
+  </div>
+
+  <div class="link-container">
+    <p>For some musical takes on the theme of optimism, determinism, and the absurd, check out these songs inspired by *Candide*:</p>
+    <a href="https://youtu.be/Vmc72fCJivA?feature=shared" target="_blank">The Best of All Possible Worlds</a>
+    <a href="https://youtu.be/EdC652e9dpE?feature=shared" target="_blank">Glitter and Be Gay</a>
+  </div>
+
+  <div class="button-container">
+    <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
+  </div>
+
+</body>
+</html>

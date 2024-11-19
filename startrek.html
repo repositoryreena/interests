@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Trek: The Final Frontier</title>
+  <style>
+    /* Reset default margin and padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden; /* Prevent scrollbars */
+      text-align: center;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 28px;
+      margin-top: 20px;
+    }
+
+    .book-description {
+      font-size: 18px;
+      color: #555;
+      text-align: center;
+      max-width: 800px;
+      margin: 20px 0;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 20px;
+      color: #777;
+      margin-top: 40px;
+    }
+
+    .image-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .button-container {
+      margin-top: 20px;
+    }
+
+    .back-btn {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #45a049;
+    }
+
+    .link-container {
+      margin-top: 20px;
+    }
+
+    .link-container a {
+      font-size: 16px;
+      color: #1E90FF;
+      text-decoration: none;
+      margin: 10px;
+    }
+
+    .link-container a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Star Trek: The Final Frontier</h1>
+
+  <div class="book-description">
+    <p>
+      *Star Trek* is a science fiction franchise created by Gene Roddenberry that explores humanity's potential for growth, understanding, and survival as it ventures into the far reaches of space. The series is best known for its iconic characters, including Captain Kirk, Spock, and Dr. McCoy, who represent the balance of logic, emotion, and humanity in the pursuit of exploration and diplomacy. One of the central themes is the conflict between emotion and logic, embodied by Spock's character, who is half-human and half-Vulcan.
+    </p>
+    <p>
+      My dad once compared me to Spock because, like him, I am often perceived as emotionless and logical in my decision-making. While I may not have the pointed ears, I can certainly relate to Spock's struggle with balancing human emotions and the need for rationality in critical situations.
+    </p>
+  </div>
+
+  <div class="quote">
+    <p>
+      "Logic is the beginning of wisdom, not the end." — Spock, *Star Trek: The Wrath of Khan*.
+    </p>
+  </div>
+
+  <div class="image-container">
+    <a href="https://en.wikipedia.org/wiki/Star_Trek" target="_blank">
+      <img src="https://cdn.britannica.com/82/162182-050-BB21D3E1/Leonard-Nimoy-Star-Trek-William-Shatner.jpg" alt="Star Trek Logo">
+    </a>
+  </div>
+
+
+  <div class="button-container">
+    <button class="back-btn" onclick="window.location.href='image5.html'">Go Back</button>
+  </div>
+
+</body>
+</html>
