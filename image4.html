@@ -3,52 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example Book with Five Clickable Pictures</title>
+  <title>Example Book with Multiple Clickable Pictures</title>
   <style>
+    /* Reset default margin and padding */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
       background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      overflow: hidden; /* Prevent scrollbars */
     }
 
     h1 {
       color: #333;
-    }
-
-    .image-container {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin: 20px 0;
-    }
-
-    img {
-      max-width: 200px;
-      height: auto;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.3s ease;
-    }
-
-    img:hover {
-      transform: scale(1.05);
+      font-size: 24px;
     }
 
     .book-description {
-      margin-top: 20px;
       font-size: 16px;
       color: #555;
-      text-align: left;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
       text-align: center;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+
+    /* Flex container to center the button */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
     }
 
     .back-btn {
-      margin-top: 30px;
       padding: 10px 20px;
       font-size: 16px;
       background-color: #4CAF50;
@@ -61,43 +56,83 @@
     .back-btn:hover {
       background-color: #45a049;
     }
+
+    /* Image container around the text and button */
+    .image-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      align-items: center;
+      margin-top: 20px;
+      width: 100%;
+      max-width: 1200px;
+      padding: 0 20px;
+    }
+
+    img {
+      max-width: 150px;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
   </style>
 </head>
 <body>
 
-  <div class="image-container">
-    <a href="gulliverstravels.html">
-      <img src="https://images.fineartamerica.com/images-medium-large-5/6-gullivers-travels-granger.jpg" alt="Image 1">
-    </a>
-    <a href="howtowinfriendsandinfluencepeople.html">
-      <img src="https://m.media-amazon.com/images/I/71vK0WVQ4rL.jpg" alt="Image 2">
-    </a>
-    <a href="lordoftherings.html">
-      <img src="https://ew.com/thmb/qqofw2-fYfIwaXB2eGSA3xbB7h4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/image-tout-5741441aeb5f4a46856513f92e182914.jpg" alt="Image 3">
-    </a>
-    <a href="thescarletletter.html">
-      <img src="https://i5.walmartimages.com/seo/The-Scarlet-Letter-Reader-s-Library-Classics-Paperback-9781954839175_556abafb-ca28-4d3d-b008-07e4b94b8987.96a6f1343d865cf51f5441a5d49f4b0b.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Image 4">
-    </a>
-    <!-- Fifth image linking to pygmalion.html -->
-    <a href="pygmalion.html">
-      <img src="https://m.media-amazon.com/images/I/41afmcnuX5L._AC_UF894,1000_QL80_.jpg" alt="Image 5">
-    </a>
-    <a href="thegiver.html">
-      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1342493368i/3636.jpg" alt="Image 6">
-    </a>
-    <a href="thetwilightzone.html">
-      <img src="https://ww2.kqed.org/app/uploads/sites/12/2019/01/twilight_zone_banner_0-800x453.jpg" alt="Image 7">
-    </a>
-  </div>
+  <h1>Books & Movies About the Truth of Humanity</h1>
 
   <div class="book-description">
     <p>
-      Lots of books purport to tell the truth about humans.
+      Many books and films delve into the complexities of human nature, society, and the truth of our existence. Some tackle these themes through adventure, while others confront the darker aspects of human behavior and moral dilemmas.
     </p>
   </div>
 
-  <!-- Button to go back to index.html -->
-  <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
+  <div class="button-container">
+    <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
+  </div>
+
+  <div class="image-container">
+    <a href="gulliverstravels.html">
+      <img src="https://images.fineartamerica.com/images-medium-large-5/6-gullivers-travels-granger.jpg" alt="Gulliver's Travels">
+    </a>
+    <a href="howtowinfriendsandinfluencepeople.html">
+      <img src="https://m.media-amazon.com/images/I/71vK0WVQ4rL.jpg" alt="How to Win Friends and Influence People">
+    </a>
+    <a href="lordoftherings.html">
+      <img src="https://ew.com/thmb/qqofw2-fYfIwaXB2eGSA3xbB7h4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/image-tout-5741441aeb5f4a46856513f92e182914.jpg" alt="Lord of the Rings">
+    </a>
+    <a href="thescarletletter.html">
+      <img src="https://i5.walmartimages.com/seo/The-Scarlet-Letter-Reader-s-Library-Classics-Paperback-9781954839175_556abafb-ca28-4d3d-b008-07e4b94b8987.96a6f1343d865cf51f5441a5d49f4b0b.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="The Scarlet Letter">
+    </a>
+    <a href="pygmalion.html">
+      <img src="https://m.media-amazon.com/images/I/41afmcnuX5L._AC_UF894,1000_QL80_.jpg" alt="Pygmalion">
+    </a>
+    <a href="thegiver.html">
+      <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1342493368i/3636.jpg" alt="The Giver">
+    </a>
+    <a href="thetwilightzone.html">
+      <img src="https://ww2.kqed.org/app/uploads/sites/12/2019/01/twilight_zone_banner_0-800x453.jpg" alt="The Twilight Zone">
+    </a>
+    <a href="lordoftheflies.html">
+      <img src="https://grindhousevideo.com/cdn/shop/products/LORDOFTHEFLIESBLU.jpg?v=1673264727" alt="Lord of the Flies">
+    </a>
+    <a href="thematrix.html">
+      <img src="https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg" alt="The Matrix">
+    </a>
+    <a href="gattaca.html">
+      <img src="https://resizing.flixster.com/1aqOUH6Of5KRYU8q2A9xZjmLhao=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p19880_v_v9_aa.jpg" alt="Gattaca">
+    </a>
+    <a href="twelveangrymen.html">
+      <img src="https://m.media-amazon.com/images/M/MV5BNGRlZjVhNWMtOTUxYi00MTYxLWEzOWUtMTM1NDc3ZWRjMDZjXkEyXkFqcGdeQWRpZWdtb25n._V1_.jpg" alt="Twelve Angry Men">
+    </a>
+  </div>
 
 </body>
 </html>
