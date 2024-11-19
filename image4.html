@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Book with Four Clickable Pictures</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .book-description {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #555;
+      text-align: left;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .back-btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+
+  <div class="image-container">
+    <a href="gulliverstravels.html">
+      <img src="https://images.fineartamerica.com/images-medium-large-5/6-gullivers-travels-granger.jpg" alt="Image 1">
+    </a>
+    <a href="howtowinfriendsandinfluencepeople.html">
+      <img src="https://m.media-amazon.com/images/I/71vK0WVQ4rL.jpg" alt="Image 2">
+    </a>
+    <a href="lordoftherings.html">
+      <img src="https://ew.com/thmb/qqofw2-fYfIwaXB2eGSA3xbB7h4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/image-tout-5741441aeb5f4a46856513f92e182914.jpg" alt="Image 3">
+    </a>
+    <a href="thescarletletter.html">
+      <img src="https://i5.walmartimages.com/seo/The-Scarlet-Letter-Reader-s-Library-Classics-Paperback-9781954839175_556abafb-ca28-4d3d-b008-07e4b94b8987.96a6f1343d865cf51f5441a5d49f4b0b.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Image 4">
+    </a>
+  </div>
+
+  <div class="book-description">
+    <p>
+      This is a sample book description. The book follows the journey of a protagonist who embarks on an extraordinary adventure. Along the way, they encounter challenges, meet intriguing characters, and ultimately discover profound truths about themselves and the world around them.
+    </p>
+    <p>
+      The four images above represent key moments from the story, each one linking to a detailed page about the scene or concept it depicts.
+    </p>
+  </div>
+
+  <!-- Button to go back to index.html -->
+  <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
+
+</body>
+</html>

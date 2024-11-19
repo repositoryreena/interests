@@ -52,6 +52,21 @@
       font-size: 16px;
       color: #555;
     }
+
+    .back-btn {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #45a049;
+    }
   </style>
 </head>
 <body>
@@ -114,11 +129,8 @@
     </a>
   </div>
 
-  <script>
-    function goBack() {
-      window.history.back();
-    }
-  </script>
+  <!-- Button to go back to index.html -->
+  <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
 
 </body>
 </html>
