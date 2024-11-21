@@ -21,11 +21,14 @@
       align-items: center;
       flex-direction: column;
       overflow: hidden; /* Prevent scrollbars */
+      padding: 20px;
     }
 
     h1 {
       color: #333;
       font-size: 24px;
+      text-align: center;
+      margin-bottom: 10px;
     }
 
     .book-description {
@@ -52,7 +55,7 @@
     }
 
     .back-btn {
-      padding: 10px 20px;
+      padding: 12px 25px;
       font-size: 16px;
       background-color: #4CAF50;
       color: white;
@@ -65,7 +68,7 @@
       background-color: #45a049;
     }
 
-    /* Image container around the text and button */
+    /* Image container with responsiveness */
     .image-container {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -75,11 +78,11 @@
       margin-top: 20px;
       width: 100%;
       max-width: 1200px;
-      padding: 0 20px;
+      padding: 0 10px;
     }
 
     img {
-      max-width: 150px;
+      max-width: 100%;
       height: auto;
       border-radius: 8px;
       cursor: pointer;
@@ -90,6 +93,46 @@
       transform: scale(1.05);
     }
 
+    /* Media query for smaller screens */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      .book-description {
+        font-size: 14px;
+      }
+
+      .quote {
+        font-size: 16px;
+      }
+
+      .back-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+
+      .image-container {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px;
+      }
+    }
+
+    /* Media query for very small screens */
+    @media (max-width: 400px) {
+      .book-description {
+        font-size: 12px;
+      }
+
+      .quote {
+        font-size: 14px;
+      }
+
+      .image-container {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 8px;
+      }
+    }
   </style>
 </head>
 <body>
