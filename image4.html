@@ -18,10 +18,10 @@
       background-color: #f9f9f9;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start; /* Changed from center to flex-start to allow scrolling */
       flex-direction: column;
-      overflow: hidden; /* Prevent scrollbars */
       padding: 20px;
+      overflow: auto; /* Removed overflow: hidden to allow scrolling */
     }
 
     h1 {
