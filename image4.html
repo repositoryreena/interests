@@ -17,11 +17,13 @@
       font-family: Arial, sans-serif;
       background-color: #f9f9f9;
       display: flex;
-      justify-content: center;
-      align-items: flex-start; /* Changed from center to flex-start to allow scrolling */
+      justify-content: flex-start; /* Align content from top */
+      align-items: flex-start; /* Align content to the top */
       flex-direction: column;
-      padding: 20px;
-      overflow: auto; /* Removed overflow: hidden to allow scrolling */
+      padding: 20px; /* Ensure there's space around the content */
+      min-height: 100vh; /* Ensure the body takes full height of the viewport */
+      box-sizing: border-box; /* Include padding in element's total width and height */
+      overflow-y: auto; /* Allow vertical scrolling */
     }
 
     h1 {
@@ -150,7 +152,6 @@
     <p><em>"Hell is other people."</em></p>
     <p>- Jean-Paul Sartre, from his play <strong>No Exit</strong> (Huis Clos)</p>
   </div>
-  
 
   <div class="button-container">
     <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
