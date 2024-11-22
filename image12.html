@@ -17,18 +17,19 @@
           font-family: Arial, sans-serif;
           background-color: #f9f9f9;
           display: flex;
-          justify-content: flex-start; /* Align content to top */
           flex-direction: column;
-          text-align: center;
+          align-items: center;
           box-sizing: border-box;
           overflow-x: hidden; /* Prevent horizontal scroll */
           overflow-y: auto; /* Enable vertical scrolling */
+          text-align: center;
         }
 
         h1 {
           color: #333;
-          font-size: 24px;
+          font-size: 28px;
           margin-top: 20px;
+          font-weight: 700;
         }
 
         .page-description {
@@ -36,58 +37,64 @@
           color: #555;
           text-align: center;
           max-width: 800px;
-          margin-bottom: 20px;
+          margin-bottom: 30px;
           padding: 0 10px;
-        }
-
-        .button-container {
-          display: flex;
-          justify-content: center;
-          margin-top: 20px;
-        }
-
-        .back-btn {
-          padding: 10px 20px;
-          font-size: 16px;
-          background-color: #4CAF50;
-          color: white;
-          border: none;
-          cursor: pointer;
-          border-radius: 5px;
-        }
-
-        .back-btn:hover {
-          background-color: #45a049;
         }
 
         .image-container {
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
           gap: 20px;
           justify-items: center;
           align-items: center;
-          margin-top: 20px;
+          margin-top: 30px;
           width: 100%;
           max-width: 1200px;
           padding: 0 20px;
         }
 
         img {
-          max-width: 150px;
+          max-width: 100%;
           height: auto;
           border-radius: 8px;
-          cursor: pointer;
           transition: transform 0.3s ease;
+          cursor: pointer;
         }
 
         img:hover {
           transform: scale(1.05);
         }
 
+        .image-caption {
+          font-size: 14px;
+          color: #333;
+          text-align: center;
+          margin-top: 8px;
+        }
+
+        .button-container {
+          margin-top: 40px;
+        }
+
+        .back-btn {
+          padding: 12px 25px;
+          font-size: 16px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: background-color 0.3s ease;
+        }
+
+        .back-btn:hover {
+          background-color: #45a049;
+        }
+
         /* Mobile responsive adjustments */
         @media (max-width: 768px) {
           h1 {
-            font-size: 22px;
+            font-size: 24px;
           }
 
           .page-description {
@@ -96,12 +103,12 @@
           }
 
           .image-container {
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Smaller images on tablets */
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
             gap: 15px;
           }
 
           .back-btn {
-            padding: 8px 16px;
+            padding: 10px 20px;
             font-size: 14px;
           }
         }
@@ -118,12 +125,12 @@
           }
 
           .image-container {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Even smaller images */
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
             gap: 10px;
           }
 
           .back-btn {
-            padding: 6px 12px;
+            padding: 8px 15px;
             font-size: 12px;
           }
         }
@@ -131,22 +138,31 @@
     </style>
 </head>
 <body>
+    
     <div class="image-container">
         <!-- Taare Zameen Par -->
+        <div>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Taare_Zameen_Par_Like_Stars_on_Earth_poster.png/220px-Taare_Zameen_Par_Like_Stars_on_Earth_poster.png" alt="Taare Zameen Par">
-        taare zameen par
-
+            <p class="image-caption">Taare Zameen Par</p>
+        </div>
+        
         <!-- Indoo Ki Jawani -->
+        <div>
             <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Indoo_Ki_Jawani_film_poster.jpg" alt="Indoo Ki Jawani">
-        indoo ki jawani
-
+            <p class="image-caption">Indoo Ki Jawani</p>
+        </div>
+        
         <!-- Lust Stories -->
+        <div>
             <img src="https://upload.wikimedia.org/wikipedia/en/0/09/Lust_Stories_%282018%29_poster.jpg" alt="Lust Stories">
-        lust stories
-
+            <p class="image-caption">Lust Stories</p>
+        </div>
+        
         <!-- 3 Idiots -->
+        <div>
             <img src="https://m.media-amazon.com/images/M/MV5BNzc4ZWQ3NmYtODE0Ny00YTQ4LTlkZWItNTBkMGQ0MmUwMmJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="3 Idiots">
-        3 idiots
+            <p class="image-caption">3 Idiots</p>
+        </div>
     </div>
 
     <div class="button-container">

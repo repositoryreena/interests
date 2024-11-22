@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Perks of Being a Wallflower</title>
+  <title>Character Moments in Movies</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,6 +11,12 @@
       padding: 20px;
       text-align: center;
       background-color: #f0f0f0;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
     .image-container {
@@ -23,148 +29,123 @@
       height: auto;
       margin: 10px;
       cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
     }
 
-    h1 {
-      color: #333;
+    img:hover {
+      transform: scale(1.05);
     }
 
     .character-links {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .character-links a {
-      display: block;
-      text-align: center;
-    }
-
-    .character-links img {
-      width: 100px;
-      height: auto;
-      transition: transform 0.2s;
-    }
-
-    .character-links img:hover {
-      transform: scale(1.1);
-    }
-
-    .book-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
       margin-top: 30px;
     }
 
-    .book-list img {
-      width: 90px;
-      height: 135px;
-      transition: transform 0.2s;
+    .character-links p {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
     }
 
-    .book-list img:hover {
-      transform: scale(1.1);
-    }
-
-    .book-description {
-      margin-top: 20px;
-      font-size: 16px;
-      color: #555;
-    }
-
-    .back-btn {
-      margin-top: 30px;
-      padding: 10px 20px;
-      font-size: 16px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-      border-radius: 5px;
-    }
-
-    .back-btn:hover {
-      background-color: #45a049;
-    }
-
-    /* New styles for the movie image section */
     .movie-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
       margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .movie-links a {
-      display: block;
-      text-align: center;
     }
 
     .movie-links img {
       width: 150px;
       height: auto;
-      transition: transform 0.2s;
+      transition: transform 0.2s ease-in-out;
     }
 
     .movie-links img:hover {
       transform: scale(1.1);
     }
 
+    .back-btn {
+      margin-top: 40px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #45a049;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .character-links {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+      .movie-links {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+      .back-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <h1>The Perks of Being a Wallflower</h1>
 
   <div class="image-container">
     <img src="https://m.media-amazon.com/images/M/MV5BNTY0ZTI2NzQtYWI1YS00ZWM3LWFmMjMtZWYxNmNmOTI0MGJjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Perks of Being a Wallflower">
   </div>
 
+  <div class="character-links">
+    <div>
+      <img src="https://m.media-amazon.com/images/M/MV5BZTZiMGU1MWMtNjk0Yi00ZjNjLTljMDEtMDhkNGE2OWY3YzZiXkEyXkFqcGc@._V1_.jpg" alt="Alison from The Breakfast Club">
+      <p>Alison from The Breakfast Club</p>
+    </div>
 
-  <!-- New section with clickable movie images -->
-     <!-- Introducing other shy, relatable characters in movies -->
-  <!-- Introducing other shy, relatable characters in movies -->
-<div class="character-links">
-  
-    <img src="https://m.media-amazon.com/images/M/MV5BZTZiMGU1MWMtNjk0Yi00ZjNjLTljMDEtMDhkNGE2OWY3YzZiXkEyXkFqcGc@._V1_.jpg" alt="The Breakfast Club">
-    <p>The Breakfast Club</p>
-  
+    <div>
+      <img src="https://m.media-amazon.com/images/M/MV5BMzNiYWQ4NjUtZjliMS00MTllLWIxNDItNGU1MjBkMTE3ODg1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Mia from The Princess Diaries">
+      <p>Mia from The Princess Diaries</p>
+    </div>
 
-  
-    <img src="https://m.media-amazon.com/images/M/MV5BMzNiYWQ4NjUtZjliMS00MTllLWIxNDItNGU1MjBkMTE3ODg1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Princess Diaries">
-    <p>The Princess Diaries</p>
-  
+    <div>
+      <img src="https://m.media-amazon.com/images/M/MV5BODE2NjE4NjYyMV5BMl5BanBnXkFtZTgwNzk3MjQ0OTE@._V1_.jpg" alt="Nadine from The Edge of Seventeen">
+      <p>Nadine from The Edge of Seventeen</p>
+    </div>
 
-    <img src="https://m.media-amazon.com/images/M/MV5BODE2NjE4NjYyMV5BMl5BanBnXkFtZTgwNzk3MjQ0OTE@._V1_.jpg" alt="The Edge of Seventeen">
-    <p>The Edge of Seventeen</p>
-  
+    <div>
+      <img src="https://www.justwatch.com/images/poster/196151224/s718/speak-2004.jpg" alt="Kristen Stewart from Speak">
+      <p>Kristen Stewart from Speak</p>
+    </div>
 
-    <img src="https://www.justwatch.com/images/poster/196151224/s718/speak-2004.jpg" alt="Speak">
-    <p>Speak</p>
-  
-</div>
+    <div>
+      <img src="https://m.media-amazon.com/images/M/MV5BOGYyZTllMmUtZDFmYS00ZjJhLThhNmEtZmQwYzkzNjkyNzhlXkEyXkFqcGc@._V1_.jpg" alt="Cristina from Vicky Cristina Barcelona">
+      <p>Cristina from Vicky Cristina Barcelona</p>
+    </div>
 
-
-
-  <div class="movie-links">
-    
-      <img src="https://lh5.googleusercontent.com/proxy/qneJgKUm898bHJvGnLfSh6KX9NBM8o1kRo-7_jaMEwCDRL3FUMM5BNiJVZdURnsgvLGscV2xwbqiq37vgo12lFLNQqqN9G9KCoN2M3SH44dLMuMPoxhin5lIuJYR-XhdBbF7qOQZ7s-sycSUcgPVvZZeXGPqFUNFk_h5" alt="Eat Pray Love">
-      <p>Eat Pray Love</p>
-    
-
-      <img src="https://m.media-amazon.com/images/M/MV5BOGYyZTllMmUtZDFmYS00ZjJhLThhNmEtZmQwYzkzNjkyNzhlXkEyXkFqcGc@._V1_.jpg" alt="Vicky Cristina Barcelona">
-      <p>Vicky Cristina Barcelona</p>
-    
-
-      <img src="https://m.media-amazon.com/images/I/81Q+ZHAIVHL._AC_UF894,1000_QL80_.jpg" alt="Cabaret">
-      <p>Cabaret</p>
-    
+    <div>
+      <img src="https://m.media-amazon.com/images/I/81Q+ZHAIVHL._AC_UF894,1000_QL80_.jpg" alt="Sally from Cabaret">
+      <p>Sally from Cabaret</p>
+    </div>
   </div>
 
-  <!-- Button to go back to index.html -->
   <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
 
 </body>
