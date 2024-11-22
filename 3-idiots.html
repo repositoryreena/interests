@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Idiots</title>
+    <style>
+        /* Reset default margin and padding */
+        body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+          display: flex;
+          justify-content: flex-start; /* Align content to top */
+          flex-direction: column;
+          text-align: center;
+          box-sizing: border-box;
+          overflow-x: hidden; /* Prevent horizontal scroll */
+          overflow-y: auto; /* Enable vertical scrolling */
+        }
+
+        h1 {
+          color: #333;
+          font-size: 24px;
+          margin-top: 20px;
+        }
+
+        .page-description {
+          font-size: 16px;
+          color: #555;
+          text-align: center;
+          max-width: 800px;
+          margin-bottom: 20px;
+          padding: 0 10px;
+        }
+
+        .button-container {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+
+        .back-btn {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+
+        .back-btn:hover {
+          background-color: #45a049;
+        }
+
+        .image-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          gap: 20px;
+          justify-items: center;
+          align-items: center;
+          margin-top: 20px;
+          width: 100%;
+          max-width: 1200px;
+          padding: 0 20px;
+        }
+
+        img {
+          max-width: 150px;
+          height: auto;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+        }
+
+        img:hover {
+          transform: scale(1.05);
+        }
+
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {
+          h1 {
+            font-size: 22px;
+          }
+
+          .page-description {
+            font-size: 14px;
+            padding: 0 15px;
+          }
+
+          .image-container {
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Smaller images on tablets */
+            gap: 15px;
+          }
+
+          .back-btn {
+            padding: 8px 16px;
+            font-size: 14px;
+          }
+        }
+
+        /* Very small screens (up to 400px) */
+        @media (max-width: 400px) {
+          h1 {
+            font-size: 20px;
+          }
+
+          .page-description {
+            font-size: 12px;
+            padding: 0 10px;
+          }
+
+          .image-container {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Even smaller images */
+            gap: 10px;
+          }
+
+          .back-btn {
+            padding: 6px 12px;
+            font-size: 12px;
+          }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>3 Idiots</h1>
+    <p>"3 Idiots" (2009) is a Bollywood film that critiques the Indian education system, highlighting the pressures students face and the importance of pursuing passion over societal expectations. It follows the journey of three engineering students and emphasizes the need to think outside the box and embrace creativity over rote learning.</p>
+
+    <div class="image-container">
+        <!-- 3 Idiots Poster -->
+        <a href="https://en.wikipedia.org/wiki/3_Idiots" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzc4ZWQ3NmYtODE0Ny00YTQ4LTlkZWItNTBkMGQ0MmUwMmJlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="3 Idiots">
+        </a>
+    </div>
+
+    <div class="button-container">
+        <button class="back-btn" onclick="window.location.href='image12.html'">Go Back</button>
+    </div>
+
+    <div class="song-link">
+        <p>Enjoy the music from *3 Idiots*:</p>
+        <ul>
+            <li><a href="https://youtu.be/7PzwOiW8-n0?feature=shared" target="_blank">All Is Well - From 3 Idiots</a></li>
+            <li><a href="https://youtu.be/lbCRtrrMvSw?feature=shared" target="_blank">Give Me Some Sunshine - From 3 Idiots</a></li>
+        </ul>
+    </div>
+</body>
+</html>
