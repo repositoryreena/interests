@@ -40,6 +40,31 @@
           padding: 0 10px;
         }
 
+        /* Container for the diagram */
+        .diagram-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            display: none; /* Hidden by default */
+        }
+
+        /* Text for the diagram */
+        .diagram-text {
+            font-size: 18px;
+            color: #333;
+            margin: 0 15px;
+        }
+
+        /* Arrow style */
+        .arrow {
+            width: 50px;
+            height: 2px;
+            background-color: #000;
+            margin: 0 10px;
+        }
+
+        /* Button styling */
         .button-container {
           display: flex;
           justify-content: center;
@@ -60,72 +85,19 @@
           background-color: #45a049;
         }
 
-        .image-container {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-          gap: 20px;
-          justify-items: center;
-          align-items: center;
-          margin-top: 20px;
-          width: 100%;
-          max-width: 1200px;
-          padding: 0 20px;
-        }
-
-        img {
-          max-width: 150px;
-          height: auto;
-          border-radius: 8px;
+        .toggle-btn {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #FF6347; /* Red color for toggle button */
+          color: white;
+          border: none;
           cursor: pointer;
-          transition: transform 0.3s ease;
+          border-radius: 5px;
+          margin-top: 20px;
         }
 
-        img:hover {
-          transform: scale(1.05);
-        }
-
-        /* Mobile responsive adjustments */
-        @media (max-width: 768px) {
-          h1 {
-            font-size: 22px;
-          }
-
-          .page-description {
-            font-size: 14px;
-            padding: 0 15px;
-          }
-
-          .image-container {
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Smaller images on tablets */
-            gap: 15px;
-          }
-
-          .back-btn {
-            padding: 8px 16px;
-            font-size: 14px;
-          }
-        }
-
-        /* Very small screens (up to 400px) */
-        @media (max-width: 400px) {
-          h1 {
-            font-size: 20px;
-          }
-
-          .page-description {
-            font-size: 12px;
-            padding: 0 10px;
-          }
-
-          .image-container {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Even smaller images */
-            gap: 10px;
-          }
-
-          .back-btn {
-            padding: 6px 12px;
-            font-size: 12px;
-          }
+        .toggle-btn:hover {
+          background-color: #FF4500;
         }
 
     </style>
@@ -136,16 +108,38 @@
         For me, traveling is a distant thought due to my condition—agoraphobia. I am perfectly content staying at home, where everything I need is within arm's reach. The world outside feels distant, and I find peace through the window of my own home. I dream of a life where I only go outside for activities that bring joy and fulfillment, while the rest of my world exists inside the walls of my sanctuary.
     </p>
 
-    <div class="image-container">
-        <!-- Image representing life at home -->
-            <img src="https://i1.sndcdn.com/artworks-000560473746-63ljwa-t1080x1080.jpg" alt="Woman in the window view">
-        
-
+    <!-- Diagram with arrows -->
+    <div class="diagram-container" id="diagram">
+        <div class="diagram-text">Religious South Asian Upbringing</div>
+        <div class="arrow"></div>
+        <div class="diagram-text">Vaginismus</div>
+        <div class="arrow"></div>
+        <div class="diagram-text">OAB (Overactive Bladder)</div>
+        <div class="arrow"></div>
+        <div class="diagram-text">Agoraphobia</div>
     </div>
 
     <div class="button-container">
         <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
     </div>
+
+    <!-- Toggle Button -->
+    <div class="button-container">
+        <button class="toggle-btn" onclick="toggleDiagram()">Censored</button>
+    </div>
+
+    <script>
+        function toggleDiagram() {
+            const diagram = document.getElementById('diagram');
+            
+            // Toggle the display of the diagram
+            if (diagram.style.display === 'none' || diagram.style.display === '') {
+                diagram.style.display = 'flex';
+            } else {
+                diagram.style.display = 'none';
+            }
+        }
+    </script>
 
 </body>
 </html>
