@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferris Bueller's Day Off</title>
+    <style>
+        /* Reset default margin and padding */
+        body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+        }
+
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          text-align: center;
+          box-sizing: border-box;
+          overflow-x: hidden;
+          overflow-y: auto;
+        }
+
+        h1 {
+          color: #333;
+          font-size: 24px;
+          margin-top: 20px;
+        }
+
+        .page-description {
+          font-size: 16px;
+          color: #555;
+          text-align: center;
+          max-width: 800px;
+          margin-bottom: 20px;
+          padding: 0 10px;
+        }
+
+        .image-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+        }
+
+        .image-container img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 8px;
+        }
+
+        .button-container {
+          display: flex;
+          justify-content: center;
+          margin-top: 30px;
+        }
+
+        .back-btn {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+
+        .back-btn:hover {
+          background-color: #45a049;
+        }
+
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {
+          h1 {
+            font-size: 22px;
+          }
+
+          .page-description {
+            font-size: 14px;
+            padding: 0 15px;
+          }
+
+          .image-container img {
+            max-width: 80%;
+          }
+
+          .back-btn {
+            padding: 8px 16px;
+            font-size: 14px;
+          }
+        }
+    </style>
+</head>
+<body>
+    <h1>Ferris Bueller's Day Off</h1>
+    <p class="page-description">
+        Ferris Bueller's Day Off (1986) is a classic teen comedy directed by John Hughes. The film follows Ferris, a high school senior who decides to skip school for a day of fun in Chicago with his best friend Cameron and his girlfriend Sloane. Ferris' antics are legendary as he outsmarts his principal and teachers, proving that sometimes it's okay to just take a break and do absolutely nothing.
+    </p>
+
+    <div class="image-container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Ferris_Bueller%27s_Day_Off.jpg" alt="Ferris Bueller's Day Off">
+    </div>
+
+    <div class="button-container">
+        <button class="back-btn" onclick="window.location.href='image11.html'">Go Back to Laziness</button>
+    </div>
+</body>
+</html>

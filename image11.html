@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embracing Laziness</title>
+    <style>
+        /* Reset default margin and padding */
+        body, html {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          width: 100%;
+        }
+      
+        body {
+          font-family: Arial, sans-serif;
+          background-color: #f9f9f9;
+          display: flex;
+          justify-content: flex-start; /* Align content to top */
+          flex-direction: column;
+          text-align: center;
+          box-sizing: border-box;
+          overflow-x: hidden; /* Prevent horizontal scroll */
+          overflow-y: auto; /* Enable vertical scrolling */
+        }
+      
+        h1 {
+          color: #333;
+          font-size: 24px;
+          margin-top: 20px;
+        }
+      
+        .page-description {
+          font-size: 16px;
+          color: #555;
+          text-align: center;
+          max-width: 800px;
+          margin-bottom: 20px;
+          padding: 0 10px;
+        }
+      
+        .button-container {
+          display: flex;
+          justify-content: center;
+          margin-top: 20px;
+        }
+      
+        .back-btn {
+          padding: 10px 20px;
+          font-size: 16px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+        }
+      
+        .back-btn:hover {
+          background-color: #45a049;
+        }
+      
+        .image-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+          gap: 20px;
+          justify-items: center;
+          align-items: center;
+          margin-top: 20px;
+          width: 100%;
+          max-width: 1200px;
+          padding: 0 20px;
+        }
+      
+        img {
+          max-width: 150px;
+          height: auto;
+          border-radius: 8px;
+          cursor: pointer;
+          transition: transform 0.3s ease;
+        }
+      
+        img:hover {
+          transform: scale(1.05);
+        }
+      
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {
+          h1 {
+            font-size: 22px;
+          }
+      
+          .page-description {
+            font-size: 14px;
+            padding: 0 15px;
+          }
+      
+          .image-container {
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Smaller images on tablets */
+            gap: 15px;
+          }
+      
+          .back-btn {
+            padding: 8px 16px;
+            font-size: 14px;
+          }
+        }
+      
+        /* Very small screens (up to 400px) */
+        @media (max-width: 400px) {
+          h1 {
+            font-size: 20px;
+          }
+      
+          .page-description {
+            font-size: 12px;
+            padding: 0 10px;
+          }
+      
+          .image-container {
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Even smaller images */
+            gap: 10px;
+          }
+      
+          .back-btn {
+            padding: 6px 12px;
+            font-size: 12px;
+          }
+        }
+      
+      </style>
+</head>
+<body>
+    <h1>Embracing Laziness</h1>
+    <p>Take a break and explore some iconic movies that capture the essence of being lazy.</p>
+
+    <div class="image-container">
+        <!-- Ferris Bueller's Day Off -->
+        <a href="ferris-buellers-day-off.html">
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Ferris_Bueller%27s_Day_Off.jpg" alt="Ferris Bueller's Day Off">
+        </a>
+
+        <!-- Office Space -->
+        <a href="office-space.html">
+            <img src="https://mediaproxy.salon.com/width/1200/https://media2.salon.com/2014/04/office_space2.jpg" alt="Office Space">
+        </a>
+
+        <!-- Diary of a Wimpy Kid -->
+        <a href="diary-of-a-wimpy-kid.html">
+            <img src="https://parentpreviews.com/images/made/legacy-pics/diary-of-a-wimpy-kid-2-rodrick-rules_668_330_80_int_s_c1.jpg" alt="Diary of a Wimpy Kid">
+        </a>
+
+        <a href="thegraduate.html">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTQ0ODc4MDk4Nl5BMl5BanBnXkFtZTcwMTEzNzgzNA@@._V1_.jpg" alt="The Graduate">
+        </a>
+    </div>
+
+    <div class="button-container">
+        <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
+    </div>
+
+    <div class="song-link">
+        <p>Relax with these tunes that perfectly match the vibe of doing nothing:</p>
+        <ul>
+            <li><a href="https://youtu.be/fLexgOxsZu0?si=ph20LUw7MSwxl6Wz" target="_blank">The Lazy Song - Bruno Mars</a></li>
+            <li><a href="https://youtu.be/rTVjnBo96Ug?feature=shared" target="_blank">Sittin' on the Dock of the Bay - Otis Redding</a></li>
+        </ul>
+    </div>
+</body>
+</html>
