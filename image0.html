@@ -15,80 +15,100 @@
 
     h1 {
       color: #333;
-    }
-
-    .image-container {
-      max-width: 300px;
-      margin: 20px auto;
-    }
-
-    img {
-      max-width: 100%;
-      height: auto;
-      margin: 10px;
-      cursor: pointer;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
     .movie-links {
-      margin-top: 30px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .movie-links a {
-      display: block;
-      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-top: 20px;
     }
 
     .movie-links img {
-      width: 150px;
+      width: 100%;
+      max-width: 250px;
       height: auto;
-      transition: transform 0.2s;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
     }
 
     .movie-links img:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
+    }
+
+    .movie-links p {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
     }
 
     .description {
       margin-top: 30px;
-      font-size: 18px;
+      font-size: 1.2rem;
       color: #555;
     }
 
     .back-btn {
-      margin-top: 30px;
-      padding: 10px 20px;
-      font-size: 16px;
+      margin-top: 40px;
+      padding: 12px 25px;
+      font-size: 1rem;
       background-color: #4CAF50;
       color: white;
       border: none;
       cursor: pointer;
       border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
 
     .back-btn:hover {
       background-color: #45a049;
     }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .movie-links {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+      .movie-links img {
+        max-width: 200px;
+      }
+
+      .back-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
+
   <div class="movie-links">
-      <img src="https://m.media-amazon.com/images/M/MV5BNGMxZDBhNGQtYTZlNi00N2UzLWI4NDEtNmUzNWM2NTdmZDA0XkEyXkFqcGc@._V1_.jpg" alt="Braveheart">
+    <div>
+      <img src="https://m.media-amazon.com/images/M/MV5BNGMxZDBhNGQtYTZlNi00N2UzLWI4NDEtNmUzNWM2NTdmZDA0XkEyXkFqcGc@._V1_.jpg" alt="Vince Vaughn from The Break-Up">
       <p>Braveheart</p>
-    
+    </div>
 
-      <img src="https://m.media-amazon.com/images/M/MV5BZTVhNTdkNmYtYWViNC00MjJjLWFjMjMtMmY1YzA1NzI3MzQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Break-Up">
-      <p>The Break-Up</p>
-    
+    <div>
+      <img src="https://m.media-amazon.com/images/M/MV5BZTVhNTdkNmYtYWViNC00MjJjLWFjMjMtMmY1YzA1NzI3MzQ0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Vince Vaughn from The Break-Up">
+      <p>Vince Vaughn from The Break-Up</p>
+    </div>
 
-      <img src="https://m.media-amazon.com/images/M/MV5BMTY5MTUyNDgwMF5BMl5BanBnXkFtZTcwNzYzMDQyMg@@._V1_.jpg" alt="He's Just Not That Into You">
-      <p>He's just not that into you</p>
-    
+    <div>
+      <img src="https://m.media-amazon.com/images/M/MV5BMTY5MTUyNDgwMF5BMl5BanBnXkFtZTcwNzYzMDQyMg@@._V1_.jpg" alt="Gigi from He's Just Not That Into You">
+      <p>Gigi from He's Just Not That Into You</p>
+    </div>
   </div>
 
   <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
-
 </body>
 </html>
