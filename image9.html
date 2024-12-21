@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Depressed People: The Wisdom of Facing the Truth</title>
+    <title>Being Underestimated: Movie Characters Who Prove Themselves</title>
     <style>
         /* Reset default margin and padding */
         body, html {
@@ -12,167 +12,159 @@
           height: 100%;
           width: 100%;
         }
-      
+
         body {
           font-family: Arial, sans-serif;
           background-color: #f9f9f9;
           display: flex;
-          justify-content: flex-start; /* Align content to top */
           flex-direction: column;
-          text-align: center;
+          align-items: center;
           box-sizing: border-box;
           overflow-x: hidden; /* Prevent horizontal scroll */
           overflow-y: auto; /* Enable vertical scrolling */
+          text-align: center;
         }
-      
+
         h1 {
           color: #333;
-          font-size: 24px;
+          font-size: 28px;
           margin-top: 20px;
+          font-weight: 700;
         }
-      
+
         .page-description {
           font-size: 16px;
           color: #555;
           text-align: center;
           max-width: 800px;
-          margin-bottom: 20px;
+          margin-bottom: 30px;
           padding: 0 10px;
         }
-      
-        .button-container {
+
+        .image-container {
           display: flex;
-          justify-content: center;
-          margin-top: 20px;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          gap: 20px;
+          margin-top: 30px;
+          width: 100%;
+          max-width: 1200px;
+          padding: 0 20px;
         }
-      
+
+        img {
+          max-width: 200px; /* Scale all images down to the same size */
+          height: auto;
+          border-radius: 8px;
+          transition: transform 0.3s ease;
+          cursor: pointer;
+        }
+
+        img:hover {
+          transform: scale(1.05);
+        }
+
+        .image-caption {
+          font-size: 14px;
+          color: #333;
+          text-align: center;
+          margin-top: 8px;
+        }
+
+        .button-container {
+          margin-top: 40px;
+        }
+
         .back-btn {
-          padding: 10px 20px;
+          padding: 12px 25px;
           font-size: 16px;
           background-color: #4CAF50;
           color: white;
           border: none;
           cursor: pointer;
           border-radius: 5px;
+          transition: background-color 0.3s ease;
         }
-      
+
         .back-btn:hover {
           background-color: #45a049;
         }
-      
-        .image-container {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-          gap: 20px;
-          justify-items: center;
-          align-items: center;
-          margin-top: 20px;
-          width: 100%;
-          max-width: 1200px;
-          padding: 0 20px;
-        }
-      
-        img {
-          max-width: 150px;
-          height: auto;
-          border-radius: 8px;
-          cursor: pointer;
-          transition: transform 0.3s ease;
-        }
-      
-        img:hover {
-          transform: scale(1.05);
-        }
-      
-        .image-description {
-          font-size: 14px;
-          color: #333;
-          text-align: center;
-          margin-top: 5px;
-        }
-      
+
         /* Mobile responsive adjustments */
         @media (max-width: 768px) {
           h1 {
-            font-size: 22px;
+            font-size: 24px;
           }
-      
+
           .page-description {
             font-size: 14px;
             padding: 0 15px;
           }
-      
+
           .image-container {
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Smaller images on tablets */
             gap: 15px;
           }
-      
+
           .back-btn {
-            padding: 8px 16px;
+            padding: 10px 20px;
             font-size: 14px;
           }
         }
-      
+
         /* Very small screens (up to 400px) */
         @media (max-width: 400px) {
           h1 {
             font-size: 20px;
           }
-      
+
           .page-description {
             font-size: 12px;
             padding: 0 10px;
           }
-      
+
           .image-container {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Even smaller images */
             gap: 10px;
           }
-      
+
           .back-btn {
-            padding: 6px 12px;
+            padding: 8px 15px;
             font-size: 12px;
           }
         }
-      
-      </style>
-      
+
+    </style>
 </head>
 <body>
     
-    <div class="image-container">
-        <!-- Little Miss Sunshine - Dwayne and Frank -->
+     <div class="image-container">
+        <!-- Elle Woods -->
         <div>
-            <img src="https://miro.medium.com/v2/resize:fit:1200/0*kgFwvqe__YbGP3qG.jpg" alt="Little Miss Sunshine">
-            <p class="image-description">Dwayne and Frank (Little Miss Sunshine)</p>
+            <img src="https://m.media-amazon.com/images/M/MV5BNTEyNjUwMTkxMV5BMl5BanBnXkFtZTcwNjk0NDk0NA@@._V1_FMjpg_UX1000_.jpg" alt="Legally Blonde">
+            <p class="image-caption">Elle Woods from Legally Blonde</p>
         </div>
-        <!-- The Girl on the Bridge - Vanessa Paradis -->
-        <div>
-            <img src="https://cdn11.bigcommerce.com/s-yzgoj/images/stencil/1280x1280/products/2866212/5900987/MOVIH5311__32848.1679557940.jpg?c=2" alt="The Girl on the Bridge">
-            <p class="image-description">Vanessa Paradis (The Girl on the Bridge)</p>
-        </div>
-        <!-- The Virgin Suicides -->
-        <div>
-            <img src="https://m.media-amazon.com/images/M/MV5BMmNhYTE5MjQtMzI2Ny00MDRhLWE4ZjAtYTg0YjNhNjZmMTVlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Virgin Suicides">
-            <p class="image-description">The Virgin Suicides</p>
-        </div>
-        <!-- Silver Linings Playbook - Tiffany -->
-        <div>
-            <img src="https://m.media-amazon.com/images/M/MV5BMTM2MTI5NzA3MF5BMl5BanBnXkFtZTcwODExNTc0OA@@._V1_.jpg" alt="Silver Linings Playbook">
-            <p class="image-description">Tiffany (Silver Linings Playbook)</p>
-        </div>
-    </div>
 
-    <div class="image-container">
-        <!-- Dear Evan Hansen - Evan -->
+        <!-- Will Smith in The Pursuit of Happyness -->
         <div>
-            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/91/DearEvanposter.png/220px-DearEvanposter.png" alt="Dear Evan Hansen">
-            <p class="image-description">Evan (Dear Evan Hansen)</p>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTQ5NjQ0NDI3NF5BMl5BanBnXkFtZTcwNDI0MjEzMw@@._V1_FMjpg_UX1000_.jpg" alt="The Pursuit of Happyness">
+            <p class="image-caption">Chris Gardner from The Pursuit of Happyness</p>
         </div>
-        <!-- Slumdog Millionaire - Jamal -->
+
+        <!-- Mulan -->
         <div>
-            <img src="https://m.media-amazon.com/images/M/MV5BMTE5ZTRkYWEtZmU5MC00NDJjLTk3NmUtZGJlYTM2MmQ3NTJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Slumdog Millionaire">
-            <p class="image-description">Jamal (Slumdog Millionaire)</p>
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_mulan_20529_83d3893a.jpeg?region=0%2C0%2C540%2C810" alt="Mulan">
+            <p class="image-caption">Mulan from Mulan</p>
+        </div>
+
+        <!-- Rocky -->
+        <div>
+            <img src="https://i.ebayimg.com/images/g/IfIAAOSw-VBgomMk/s-l1200.jpg" alt="Rocky">
+            <p class="image-caption">Rocky from Rocky</p>
+        </div>
+
+        <!-- 12 Angry Men -->
+        <div>
+            <img src="https://cdn11.bigcommerce.com/s-yzgoj/images/stencil/1280x1280/products/2874740/5899691/MOVIJ1201__87443.1679557033.jpg?c=2" alt="12 Angry Men">
+            <p class="image-caption">Juror #8 from 12 Angry Men</p>
         </div>
     </div>
 

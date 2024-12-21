@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romantic Love</title>
+    <title>Embracing Laziness</title>
     <style>
         /* Reset default margin and padding */
         body, html {
@@ -29,7 +29,6 @@
           color: #333;
           font-size: 24px;
           margin-top: 20px;
-          padding: 0 10px;
         }
       
         .page-description {
@@ -55,7 +54,6 @@
           border: none;
           cursor: pointer;
           border-radius: 5px;
-          transition: background-color 0.3s;
         }
       
         .back-btn:hover {
@@ -64,7 +62,7 @@
       
         .image-container {
           display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
           gap: 20px;
           justify-items: center;
           align-items: center;
@@ -75,7 +73,7 @@
         }
       
         img {
-          max-width: 100%;
+          max-width: 150px;
           height: auto;
           border-radius: 8px;
           cursor: pointer;
@@ -85,12 +83,12 @@
         img:hover {
           transform: scale(1.05);
         }
-
-        p {
+      
+        .image-description {
           font-size: 14px;
           color: #333;
-          margin-top: 10px;
-          text-transform: capitalize;
+          text-align: center;
+          margin-top: 5px;
         }
       
         /* Mobile responsive adjustments */
@@ -105,7 +103,7 @@
           }
       
           .image-container {
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Smaller images on tablets */
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Smaller images on tablets */
             gap: 15px;
           }
       
@@ -127,7 +125,7 @@
           }
       
           .image-container {
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Even smaller images */
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Even smaller images */
             gap: 10px;
           }
       
@@ -136,27 +134,31 @@
             font-size: 12px;
           }
         }
-
-    </style>
+      
+      </style>
 </head>
 <body>
-
+    
     <div class="image-container">
+        <!-- Ferris Bueller's Day Off -->
         <div>
-            <img src="https://media-cldnry.s-nbcnews.com/image/upload/newscms/2021_43/1793506/romeo-juliet-mc-inline-211026.jpeg" alt="Romeo and Juliet">
-            <p>Romeo and Juliet</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/9/9b/Ferris_Bueller%27s_Day_Off.jpg" alt="Ferris Bueller's Day Off">
+            <p class="image-description">Ferris Bueller (Ferris Bueller's Day Off)</p>
         </div>
+        <!-- Office Space - Milton -->
         <div>
-            <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/West_Side_Story_2021_Official_Poster.jpg" alt="West Side Story">
-            <p>West Side Story</p>
+            <img src="https://i5.walmartimages.com/seo/Office-Space-One-Sheet-Wall-Poster-22-375-x-34-Framed_42f66f53-fcaa-460c-a84c-f80a65bf095b.67b288f3cfc41cba9c77b75f612ef7ef.jpeg" alt="Office Space">
+            <p class="image-description">Milton (Office Space)</p>
         </div>
+        <!-- Diary of a Wimpy Kid - Rodrick -->
         <div>
-            <img src="https://m.media-amazon.com/images/M/MV5BYTgyOGY4OTktZmZhMC00ZmIwLWI4YjUtNjYzNDg1Nzc3ZDg1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Moulin Rouge!">
-            <p>Moulin Rouge</p>
+            <img src="https://m.media-amazon.com/images/I/81BMOmkxyaL._AC_UF894,1000_QL80_.jpg" alt="Diary of a Wimpy Kid">
+            <p class="image-description">Rodrick (Diary of a Wimpy Kid)</p>
         </div>
+        <!-- The Graduate -->
         <div>
-            <img src="https://annemcclane.com/wp-content/uploads/2019/08/count-of-monte-cristo-960x1440.jpg" alt="The Count of Monte Cristo">
-            <p>The Count of Monte Cristo</p>
+            <img src="https://m.media-amazon.com/images/M/MV5BMTQ0ODc4MDk4Nl5BMl5BanBnXkFtZTcwMTEzNzgzNA@@._V1_.jpg" alt="The Graduate">
+            <p class="image-description">Benjamin (The Graduate)</p>
         </div>
     </div>
 

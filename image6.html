@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good People and Their Transformations</title>
+    <style>
+        /* Reset default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-top: 30px;
+        }
+
+        .page-description {
+            font-size: 16px;
+            color: #555;
+            text-align: center;
+            max-width: 800px;
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .back-btn {
+            padding: 12px 25px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #45a049;
+        }
+
+        .image-row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            padding: 0 20px;
+        }
+
+        .image-container {
+            text-align: center;
+        }
+
+        img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-description {
+            font-size: 14px;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        /* Mobile responsive adjustments */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .page-description {
+                font-size: 14px;
+                padding: 0 15px;
+            }
+
+            .image-row {
+                gap: 20px;
+            }
+
+            .back-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+
+        /* Very small screens (up to 400px) */
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            .page-description {
+                font-size: 12px;
+                padding: 0 10px;
+            }
+
+            .image-row {
+                gap: 10px;
+            }
+
+            .back-btn {
+                padding: 8px 15px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Good People and Their Transformations</h1>
+    <div class="page-description">
+        Discover iconic characters from movies and their transformations. Click on the images to explore their stories.
+    </div>
+
+    <!-- First Row -->
+    <div class="image-row">
+        <div class="image-container">
+            <img src="https://resizing.flixster.com/0-c2_ppvBP8RBhMIWteUkeNofG4=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8236892_v_v10_ar.jpg" alt="Black Swan">
+            <p class="image-description">Nina (Black Swan)</p>
+        </div>
+        <div class="image-container">
+            <img src="https://lumiere-a.akamaihd.net/v1/images/p_thelittlemermaid_6a6ef760.jpeg" alt="The Little Mermaid">
+            <p class="image-description">Ariel (The Little Mermaid)</p>
+        </div>
+        <div class="image-container">
+            <img src="https://static.wixstatic.com/media/ba027c_7e74d12ae597443faf6c2a616f33a4c3~mv2.png/v1/fill/w_568,h_852,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/ba027c_7e74d12ae597443faf6c2a616f33a4c3~mv2.png" alt="Mean Girls">
+            <p class="image-description">Cady (Mean Girls)</p>
+        </div>
+        <div class="image-container">
+            <img src="https://m.media-amazon.com/images/M/MV5BNTEyNmEwOWUtYzkyOC00ZTQ4LTllZmUtMjk0Y2YwOGUzYjRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Spirited Away">
+            <p class="image-description">Chihiro (Spirited Away)</p>
+        </div>
+    </div>
+
+    <!-- Second Row -->
+    <div class="image-row">
+        <div class="image-container">
+            <img src="https://m.media-amazon.com/images/M/MV5BOWM3NTI3YWEtYjJmMy00M2U5LWI1NzEtZWM3ZDY2ZWNjOGRiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Devil Wears Prada">
+            <p class="image-description">Andy (The Devil Wears Prada)</p>
+        </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="image-row">
+        <div class="image-container">
+            <img src="https://m.media-amazon.com/images/I/81JPKdfJjdL.jpg" alt="Coraline">
+            <p class="image-description">Coraline (Coraline)</p>
+        </div>
+    </div>
+
+    <!-- Fourth Row -->
+    <div class="image-row">
+        <div class="image-container">
+            <img src="https://m.media-amazon.com/images/I/81UPHHaOtQL._AC_UF894,1000_QL80_.jpg" alt="Vivarium">
+            <p class="image-description">Evil Alien Child (Vivarium)</p>
+        </div>
+    </div>
+
+    <!-- Fifth Row -->
+    <div class="image-row">
+        <div class="image-container">
+            <img src="https://filmartgallery.com/cdn/shop/products/Home-Alone-Vintage-Movie-Poster-Original-1-Sheet-27x41_3d0a8245-2a4e-479b-b013-32eebddc3568.jpg?v=1670014947" alt="Home Alone">
+            <p class="image-description">Kevin (Home Alone)</p>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
+    </div>
+</body>
+</html>
