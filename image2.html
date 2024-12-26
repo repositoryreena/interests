@@ -15,6 +15,8 @@
 
     h1 {
       color: #333;
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
 
     .image-container {
@@ -25,46 +27,105 @@
     img {
       max-width: 100%;
       height: auto;
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease-in-out;
     }
 
-    .movie-description {
-      margin-top: 20px;
-      font-size: 16px;
-      color: #555;
+    img:hover {
+      transform: scale(1.05);
+    }
+
+    .character-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-top: 30px;
+    }
+
+    .character-links p {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
     }
 
     .back-btn {
-      margin-top: 30px;
-      padding: 10px 20px;
-      font-size: 16px;
+      margin-top: 40px;
+      padding: 12px 25px;
+      font-size: 1rem;
       background-color: #4CAF50;
       color: white;
       border: none;
       cursor: pointer;
       border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
 
     .back-btn:hover {
       background-color: #45a049;
     }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .character-links {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+      .back-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
   </style>
 </head>
 <body>
-
   <h1>Clueless</h1>
 
-  <div class="image-container">
-    <img src="https://m.media-amazon.com/images/M/MV5BMTgwYjQ1NDktOTcwNi00MWZhLTliYWQtZDg5NjZhY2U5ZTNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Clueless Movie Poster">
+  <div class="character-links">
+    <!-- Cher from Clueless -->
+    <div>
+      <img src="https://m.media-amazon.com/images/M/MV5BMTgwYjQ1NDktOTcwNi00MWZhLTliYWQtZDg5NjZhY2U5ZTNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Cher from Clueless">
+      <p>Cher (*Clueless*, 1995)</p>
+    </div>
+
+    <!-- Forrest Gump -->
+    <div>
+      <img src="https://i.ebayimg.com/images/g/y9gAAOSwUQhi-9Nq/s-l1200.jpg" alt="Forrest Gump">
+      <p>Forrest Gump (*Forrest Gump*, 1994)</p>
+    </div>
+
+    <!-- Lloyd Christmas from Dumb and Dumber -->
+    <div>
+      <img src="https://m.media-amazon.com/images/I/51PNKLA2RbL._AC_UF894,1000_QL80_.jpg" alt="Lloyd Christmas from Dumb and Dumber">
+      <p>Lloyd Christmas (*Dumb and Dumber*, 1994)</p>
+    </div>
+
+    <!-- Derek Zoolander from Zoolander -->
+    <div>
+      <img src="https://m.media-amazon.com/images/I/41sfMSvYV5L._AC_UF894,1000_QL80_.jpg" alt="Derek Zoolander from Zoolander">
+      <p>Derek Zoolander (*Zoolander*, 2001)</p>
+    </div>
+
+    <!-- Inspector Clouseau from The Pink Panther -->
+    <div>
+      <img src="https://m.media-amazon.com/images/I/51rfvSZGAZL._AC_UF894,1000_QL80_.jpg" alt="Inspector Clouseau from The Pink Panther">
+      <p>Inspector Clouseau (*The Pink Panther* series)</p>
+    </div>
+
+    <!-- Kristen Wiig from Bridesmaids -->
+    <div>
+      <img src="https://m.media-amazon.com/images/I/71NSaiNKO9L.jpg" alt="Kristen Wiig from Bridesmaids">
+      <p>Kristen Wiig (*Bridesmaids*, 2011)</p>
+    </div>
   </div>
 
-  <div class="movie-description">
-    <strong>Director:</strong> Amy Heckerling<br>
-    <strong>Release Year:</strong> 1995<br>
-    <strong>Genre:</strong> Comedy, Romance, Coming-of-age<br>
-  </div>
-
-  <!-- Button to go back to index.html -->
   <button class="back-btn" onclick="window.location.href='index.html'">Go Back to Index</button>
-
 </body>
 </html>
