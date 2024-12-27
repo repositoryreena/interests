@@ -21,7 +21,7 @@
           flex-direction: column;
           text-align: center;
           box-sizing: border-box;
-          overflow-x: hidden; /* Prevent horizontal scroll */
+          overflow-x: hidden; /* Prevent horizontal scroll on body */
           overflow-y: auto; /* Enable vertical scrolling */
         }
       
@@ -61,15 +61,17 @@
         }
       
         .image-container {
-          display: grid;
-          grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-          gap: 20px;
-          justify-items: center;
-          align-items: center;
+          display: flex;
+          justify-content: flex-start;
+          overflow-x: auto;  /* Allow horizontal scrolling */
+          gap: 20px; /* Adjust the gap between the images */
           margin-top: 20px;
-          width: 100%;
-          max-width: 1200px;
           padding: 0 20px;
+          scroll-behavior: smooth; /* Smooth scrolling */
+        }
+      
+        .image-container > div {
+          text-align: center;
         }
       
         img {
@@ -103,7 +105,6 @@
           }
       
           .image-container {
-            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Smaller images on tablets */
             gap: 15px;
           }
       
@@ -125,7 +126,6 @@
           }
       
           .image-container {
-            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* Even smaller images */
             gap: 10px;
           }
       
@@ -135,8 +135,7 @@
           }
         }
       
-      </style>
-      
+    </style>
 </head>
 <body>
     <h1>Depressed</h1>
@@ -161,9 +160,6 @@
             <img src="https://m.media-amazon.com/images/M/MV5BMTM2MTI5NzA3MF5BMl5BanBnXkFtZTcwODExNTc0OA@@._V1_.jpg" alt="Silver Linings Playbook">
             <p class="image-description">Tiffany (Silver Linings Playbook)</p>
         </div>
-    </div>
-
-    <div class="image-container">
         <!-- Dear Evan Hansen - Evan -->
         <div>
             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/91/DearEvanposter.png/220px-DearEvanposter.png" alt="Dear Evan Hansen">
@@ -174,7 +170,6 @@
             <img src="https://m.media-amazon.com/images/M/MV5BMTE5ZTRkYWEtZmU5MC00NDJjLTk3NmUtZGJlYTM2MmQ3NTJkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Slumdog Millionaire">
             <p class="image-description">Jamal (Slumdog Millionaire)</p>
         </div>
-
         <div>
           <img src="https://m.media-amazon.com/images/I/71PfZFFz9yL.jpg" alt="The Matrix">
           <p class="image-description">Neo (The Matrix)</p>
