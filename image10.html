@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obsessed</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      color: #333;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .movie-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      margin-top: 20px;
+    }
+
+    .movie-links img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .movie-links img:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-links p {
+      font-size: 1rem;
+      font-weight: bold;
+      color: #333;
+      margin-top: 10px;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 1.1rem;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .quote-description {
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 5px;
+    }
+
+    .back-btn {
+      margin-top: 40px;
+      padding: 12px 25px;
+      font-size: 1rem;
+      background-color: #d6336c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-btn:hover {
+      background-color: #c72b5f;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .movie-links {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+      }
+
+      .movie-links img {
+        max-width: 200px;
+      }
+
+      .back-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+<h1>Obsessed</h1>
+<div class="movie-links">
+
+  <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiGRC6ZSNsW8_h5TxZgSPWeILEIgj5CrwG3A&s" alt="Ingrid Goes West">
+    <p>Ingrid Goes West</p>
+    <div class="quote">"Hashtag perfect."</div>
+    <div class="quote-description">When parasocial becomes personal.</div>
+  </div>
+
+  
+
+  <div>
+    <img src="https://m.media-amazon.com/images/I/51zTM6JdtcL._UF894,1000_QL80_.jpg" alt="Fatal Attraction">
+    <p>Fatal Attraction</p>
+    <div class="quote">"I won't be ignored, Dan."</div>
+    <div class="quote-description">A one-night stand spirals into obsession.</div>
+  </div>
+
+  <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13ia-mZfueZ1hqlTa_NQ_yUVy9p1-YxM1NA&s" alt="The Talented Mr. Ripley">
+    <p>The Talented Mr. Ripley</p>
+    <div class="quote">"I'd rather be a fake somebody than a real nobody."</div>
+    <div class="quote-description">Envy evolves into identity theft and murder.</div>
+  </div>
+
+  <div>
+    <img src="https://i.ebayimg.com/images/g/GKAAAOSwehhkK4cs/s-l1200.jpg" alt="Misery">
+    <p>Misery</p>
+    <div class="quote">"I'm your number one fan."</div>
+    <div class="quote-description">Admiration turns into captivity.</div>
+  </div>
+
+  <div>
+    <img src="https://cdn11.bigcommerce.com/s-yzgoj/images/stencil/1280x1280/products/2923597/5949076/MOVCE3158__73501.1679594237.jpg?c=2" alt="Amadeus">
+    <p>Amadeus</p>
+    <div class="quote">"Why did you choose me?"</div>
+    <div class="quote-description">Jealousy masked as divine duty.</div>
+  </div>
+
+  <div>
+    <img src="https://filmartgallery.com/cdn/shop/files/Dangerous-Liaisons-Vintage-Movie-Poster-Original.jpg?v=1738912425" alt="Dangerous Liaisons">
+    <p>Dangerous Liaisons</p>
+    <div class="quote">"It is beyond my control."</div>
+    <div class="quote-description">Desire is a game. Obsession is the prize.</div>
+  </div>
+
+  <div>
+    <img src="https://i.ebayimg.com/images/g/KA8AAOSwZGhkMMO4/s-l400.jpg" alt="Cruel Intentions">
+    <p>Cruel Intentions</p>
+    <div class="quote">"You can’t possibly be this naïve."</div>
+    <div class="quote-description">Manipulation fueled by lust and ego.</div>
+  </div>
+
+  <div>
+    <img src="https://m.media-amazon.com/images/I/51dRlbf-wRL._UF894,1000_QL80_.jpg" alt="Confessions of a Shopaholic">
+    <p>Confessions of a Shopaholic</p>
+    <div class="quote">"When I shop, the world gets better."</div>
+    <div class="quote-description">Retail therapy gone completely off the rails.</div>
+  </div>
+
+  <div>
+    <img src="https://i.ebayimg.com/images/g/XDAAAOSwiLNmzZ9~/s-l1200.jpg" alt="Catch Me If You Can">
+    <p>Catch Me If You Can</p>
+    <div class="quote">"I'm the pilot."</div>
+    <div class="quote-description">Obsessed with reinvention and outrunning the truth.</div>
+  </div>
+
+  <div>
+    <img src="https://m.media-amazon.com/images/I/81Az82YYZaS.jpg" alt="Kill Bill">
+    <p>Kill Bill</p>
+    <div class="quote">"Revenge is a dish best served cold."</div>
+    <div class="quote-description">Fixation with vengeance sharpened like a blade.</div>
+  </div>
+
+  <div>
+    <img src="https://m.media-amazon.com/images/I/71qZKvz1g-L._UF894,1000_QL80_.jpg" alt="Les Misérables">
+    <p>Les Misérables</p>
+    <div class="quote">"To love another person is to see the face of God."</div>
+    <div class="quote-description">Javert’s obsession with justice becomes his undoing.</div>
+  </div>
+
+  <div>
+    <img src="https://www.movieposters.com/cdn/shop/files/AmericanPsycho.mpw.114775_6925f006-8c6d-4de6-831f-60880f03fa06_480x.progressive.jpg?v=1728313444" alt="American Psycho">
+    <p>American Psycho</p>
+    <div class="quote">"I have to return some videotapes."</div>
+    <div class="quote-description">A mask of sanity hiding compulsive violence.</div>
+  </div>
+
+  <div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/8/8b/No_Country_for_Old_Men_poster.jpg" alt="No Country for Old Men">
+    <p>No Country for Old Men</p>
+    <div class="quote">"Call it."</div>
+    <div class="quote-description">A killer governed by fate, not reason.</div>
+  </div>
+
+  <div>
+    <img src="https://www.movieposters.com/cdn/shop/products/23d574c138b9a6c3e40ab82421442b40_1cbe8b6c-ab9a-4bb1-a192-b18091006752_480x.progressive.jpg?v=1573592565" alt="Gladiator">
+    <p>Gladiator</p>
+    <div class="quote">"Are you not entertained?"</div>
+    <div class="quote-description">Obsession with vengeance becomes legend.</div>
+  </div>
+
+  <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdF2GpiYp-wlumhs2EVaYuQhzGLbW5fr3T6g&s" alt="There Will Be Blood">
+    <p>There Will Be Blood</p>
+    <div class="quote">"I drink your milkshake!"</div>
+    <div class="quote-description">Greed and ego spiral into total madness.</div>
+  </div>
+
+  <div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg" alt="Joker">
+    <p>Joker</p>
+    <div class="quote">"You wouldn't get it."</div>
+    <div class="quote-description">Isolation breeds obsession, chaos, and tragedy.</div>
+  </div>
+
+  <div>
+    <img src="https://i.ebayimg.com/images/g/Q3gAAOxy4kpRAHr~/s-l1200.jpg" alt="Sweeney Todd">
+    <p>Sweeney Todd</p>
+    <div class="quote">"At last, my arm is complete again."</div>
+    <div class="quote-description">Fixated on revenge, he loses his soul.</div>
+  </div>
+
+  <div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg" alt="Fight Club">
+    <p>Fight Club</p>
+    <div class="quote">"I am Jack’s smirking revenge."</div>
+    <div class="quote-description">Obsession with freedom morphs into destruction.</div>
+  </div>
+
+  <div>
+    <img src="https://i.ebayimg.com/images/g/X5EAAOSwxqBg7xk0/s-l1200.jpg" alt="Blade Runner">
+    <p>Blade Runner</p>
+    <div class="quote">"More human than human."</div>
+    <div class="quote-description">What’s more obsessive than seeking your own soul?</div>
+  </div>
+
+  <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkDJgY694ZqQG69UubmDRl06BbuR6fNQHAbw&s" alt="Swimfan">
+    <p>Swimfan</p>
+    <div class="quote">"I won't let you go."</div>
+    <div class="quote-description">Obsession swims below the surface, then drowns.</div>
+  </div>
+
+  <div>
+    <img src="https://image.tmdb.org/t/p/original/x98L6eO7MsvNmXFy8TNza9UdsFI.jpg" alt="Obsessed">
+    <p>Obsessed</p>
+    <div class="quote">"I know what I saw."</div>
+    <div class="quote-description">A crush turns into a corporate nightmare.</div>
+  </div>
+
+  <div>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqCb5Jxq5Nc7_NcyqCPRSmc5KGDiVuSwzOvw&s" alt="The Crush">
+    <p>The Crush</p>
+    <div class="quote">"I love you, Nick. Isn't that enough?"</div>
+    <div class="quote-description">Too young to know better, too obsessed to stop.</div>
+  </div>
+
+  <div>
+    <img src="https://m.media-amazon.com/images/I/41pjbTt+o7L._UF894,1000_QL80_.jpg" alt="Hard Candy">
+    <p>Hard Candy</p>
+    <div class="quote">"Playtime is over."</div>
+    <div class="quote-description">Obsession flips the predator/prey dynamic.</div>
+  </div>
+
+  <div>
+    <img src="https://m.media-amazon.com/images/I/616dmRZ6vGL.jpg" alt="Scott Pilgrim vs. the World">
+    <p>Scott Pilgrim vs. the World</p>
+    <div class="quote">"I’m in lesbians with you."</div>
+    <div class="quote-description">Battle your obsessions to win her heart—literally.</div>
+  </div>
+
+  <div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS0kJQ6rhMkPnYnSjNFsh4X5rilwG0fywJ3A&s" alt="The Other Boleyn Girl">
+  <p>The Other Boleyn Girl</p>
+  <p class="quote">“You may have my body, but you will never have my soul.”</p>
+  <p class="quote-description">Anne Boleyn’s chilling defiance encapsulates her hunger for power and control. The film dives deep into obsession—of sisters competing for the love of a king, of political ambition, and of the cost of being desired in a world where love and manipulation are inseparable. The Boleyn sisters aren't free—they’re possessed by courtly obsession and used as pawns in a deadly game.</p>
+</div>
+
+
+</div>
+<button class="back-btn" onclick="history.back()">← Back</button>
+</body>
+</html>
